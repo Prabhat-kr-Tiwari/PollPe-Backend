@@ -1,5 +1,5 @@
 const express =require('express')
-const connection=require('./database');
+const connection=require('./config/database');
 const { forEach } = require('lodash');
 
 const app=express()
@@ -210,6 +210,8 @@ GROUP BY p.poll_id;
       res.status(200).json({ polls: results });
     });
   });
+  //get all polls by userid
+  
 
 
   
