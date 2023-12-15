@@ -22,6 +22,12 @@ const QuestionsControllers=require('../controllers/QuestionsControllers')
 router.post('/createQuestionSet',QuestionsControllers.createQuestionSet)
 router.post('/createOption',QuestionsControllers.createOption)
 router.put('/questionSets/:pollId/:questionSetId',QuestionsControllers.updateQuestionSet)
+
+
+//voting controllers
+const votingControllers=require('../controllers/vontingController')
+router.post('/vote',votingControllers.vote)
+
 module.exports=router
 
 
