@@ -334,6 +334,7 @@ connection.beginTransaction(err => {
 
 });
 
+
 app.get('/polls/:poll_id/analytics', (req, res) => {
   const pollId = req.params.poll_id;
 
